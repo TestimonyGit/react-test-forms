@@ -47,6 +47,7 @@ function FormPersonalInfo() {
         className='mt-2'
         label={intl.formatMessage({ id: 'form.personalInfo.phone', defaultMessage: 'Phone' })}
         type="tel"
+        inputMask="0999 999 999"
         placeholder={intl.formatMessage({ id: 'form.personalInfo.enterPhone', defaultMessage: 'Enter your phone number' })}
         value={formData.phone}
         onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
