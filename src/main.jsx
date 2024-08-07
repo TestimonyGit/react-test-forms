@@ -28,7 +28,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           </Route>
         </Route>
         {/* Make sure all routes other the valid ones lead to the form */}
-        {/* <Route path="*" element={<Navigate to={routePaths.PERSONAL_INFO} />} /> */}
+        <Route path="*" element={<Navigate to={routePaths.PERSONAL_INFO} />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
